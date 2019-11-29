@@ -1,0 +1,24 @@
+{
+    "name": "test/todo-list",
+    "description": "The todo-list simple mvc for test",
+    "type": "project",
+    "require": {
+        "php": "^7.2"
+    },
+    "authors": [
+        {
+            "name": "julbel1984",
+            "email": "belashova1984@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "app",
+            "Core\\": "core"
+        },
+        "classmap": [
+            "app/",
+            "core/"
+        ]
+    }
+}
