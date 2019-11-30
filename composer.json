@@ -3,7 +3,8 @@
     "description": "The todo-list simple mvc for test",
     "type": "project",
     "require": {
-        "php": "^7.2"
+        "php": "^7.2",
+        "ext-pdo": "*"
     },
     "authors": [
         {
