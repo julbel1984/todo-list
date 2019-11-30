@@ -19,6 +19,10 @@ class Router
         'POST' => []
     ];
 
+    /**
+     * @param $file
+     * @return static
+     */
     public static function load($file)
     {
         $router = new static;
@@ -29,7 +33,7 @@ class Router
     }
 
     /**
-     *
+     * Обрабатывает get
      *
      * @param $uri
      * @param $controller
@@ -40,7 +44,7 @@ class Router
     }
 
     /**
-     *
+     * Обрабатывает post
      *
      * @param $uri
      * @param $controller
