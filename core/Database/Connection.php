@@ -1,12 +1,22 @@
 <?php
 
-namespace App\Core\Database;
+namespace Todo\Database;
 
 use PDO;
 use PDOException;
 
+/**
+ * Class Connection
+ * @package Todo\Database
+ */
 class Connection
 {
+    /**
+     * Подключение к БД
+     * 
+     * @param array $config
+     * @return PDO 
+     */
     public static function make($config)
     {
         try {

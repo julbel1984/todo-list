@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Core;
+namespace Todo;
 
 /**
  * Class Router маршрутизатор
- * @package App\Core
+ * @package Todo
  * @author Julia Belashova
  */
 class Router

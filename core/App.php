@@ -1,6 +1,8 @@
 <?php
 
-namespace App\Core;
+namespace Todo;
+
+use Exception;
 
 /**
  * Базовый контейнер внедрения зависимостей DI.
@@ -8,7 +10,7 @@ namespace App\Core;
  * были отправлены ему.
  *
  * Class App
- * @package App\Core
+ * @package Todo
  * @author Julia Belashova
  */
 class App
@@ -38,10 +40,10 @@ class App
      */
     public static function get($key)
     {
-        if (!array_key_exists($key, static::$registry)) {
-            throw new Exception("Нет {$key} связанных в контейнере");
+        if (array_key_exists($key, static::$registry)) {
+            return static::$registry[$key];            
         }
 
-        return static::$registry[$key];
+        throw new \Exception("Нет {$key} связанных в контейнере");
     }
 }
